@@ -67,15 +67,17 @@ search :-
     findall(_, searchDFS(s([volk, koza, kapusta], 'L', []), s([], 'R', [_,_,_])), _),
     get_time(T2),
     DFStotalTime is T2 - T1,
-
+    format('~nDFS done.~n========================================~n', []),
     get_time(T3),
     findall(_, searchBFS(s([volk, koza, kapusta], 'L', []), s([], 'R', [_,_,_])), _),
     get_time(T4),
     BFStotalTime is T4 - T3,
+    format('~nBFS done.~n========================================~n', []),
     get_time(T5),
     findall(_, searchIter(s([volk, koza, kapusta], 'L', []), s([], 'R', [_,_,_])), _),
     get_time(T6),
     ITERtotalTime is T6 - T5,
+    format('~nIterative search done.~n========================================~n', []),
     format('Total DFS Time: ~w~n========================================~n', [DFStotalTime]),
     format('Total BFS Time: ~w~n========================================~n', [BFStotalTime]),
     format('Total iterative Time: ~w~n========================================~n', [ITERtotalTime]).
