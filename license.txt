@@ -1,0 +1,7 @@
+My Plugin License
+
+Copyright (c) 2025 Unspoken Team
+
+This plugin is proprietary software. All rights reserved.
+
+You may use this plugin only as-is, without modification, decompilation, or reverse engineering. Redistribution is prohibited without prior written consent.
